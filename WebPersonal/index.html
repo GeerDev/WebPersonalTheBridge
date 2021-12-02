@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Importación Typed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <title>Web Personal Ger</title>
+</head>
+<body>
+    <main class="main">
+        
+        <!-- Sección Navegación -->
+        <header>
+            <nav class="nav">
+                <div class="nav__marca">
+                    <a href="index.html"><h1>Web Personal <span id="Ger">Ger</span></h1></a>
+                </div>
+                <div class="menu-btn">
+                    <div class="move" id="cruz">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="nav__enlaces">
+                    <a href="#home" class="navbar__enlace">Home</a>
+                    <a href="#bio" class="navbar__enlace">Biografia</a>
+                    <a href="#port" class="navbar__enlace">Portfolio</a>
+                    <a href="#contact" class="navbar__enlace">Contacto</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Sección Presentación -->
+        <section class="home" id="home">
+            <div class="home__texto">
+                <p class="text-1">Hola, mi nombre es</p>
+                <p class="text-2">Germán Fernández</p>
+                <p class="text-3">y soy <span id="typing"></span></p>
+            </div>
+        </section>
+
+        <!-- Sección Biografía -->
+        <section id="bio" class="guia sectionbio">
+            <h2>Zona Biografia</h2>
+            <div class="biografia">
+                <aside class="biografia__izquierda">
+                    <img src="../assets/computer.jpg" alt="Este es el texto por si no carga la imagen de biografia">
+                </aside>
+                <article class="biografia__derecha">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde fugiat a voluptate expedita quisquam maxime dolorem ab aspernatur obcaecati architecto rerum rem quae est sapiente, optio recusandae similique omnis totam eius libero repudiandae perferendis. Eveniet excepturi temporibus sit nobis odio?</p>
+                    <a href="./html/biografia.html" class="biografia__boton">Ir al Blog</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Portfolio -->
+        <section id="port" class="sectionport">
+            <h2>Zona Portfolio</h2>
+            <ul class="portfolio">
+                <a href="./html/portfolio.html">
+                <li class="portfolio__tarjeta">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Front-End</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium libero est ab fugit repudiandae placeat veniam suscipit deserunt neque tempora quaerat cupiditate atque voluptatum similique reiciendis, numquam aliquam corporis.</p>
+                </li>
+                </a>
+                <a href="./html/portfolio.html">
+                <li class="portfolio__tarjeta">
+                    <i class="fas fa-code"></i>
+                    <h3>Back-End</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium libero est ab fugit repudiandae placeat veniam suscipit deserunt neque tempora quaerat cupiditate atque voluptatum similique reiciendis, numquam aliquam corporis.</p>
+                </li>
+                </a>
+                <a href="./html/portfolio.html">
+                <li class="portfolio__tarjeta">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Devops</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium libero est ab fugit repudiandae placeat veniam suscipit deserunt neque tempora quaerat cupiditate atque voluptatum similique reiciendis, numquam aliquam corporis.</p>
+                </li>
+                </a>
+            </ul>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contact" class="guia sectioncontact">
+            <h2>Zona Contacto</h2>
+            <div class="contacto">
+                <form action="./html/contacto.html" method="get">
+                    <h3>Contacta conmigo</h3>
+                    <div>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre..." required autofocus>
+                        <input type="email" name="email" id="email" placeholder="Email..." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    </div>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto..." required>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Inserta tu mensaje aquí..." required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+                <aside>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4282923154888!2d-3.694859984318273!3d40.42151426327192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229dd28bc4f6b%3A0x1b818ff2f527183b!2sThe%20Bridge%20%7C%20Digital%20Talent%20Accelerator!5e0!3m2!1ses!2ses!4v1638141247661!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Sección Pie de Página -->
+        <footer class="footer">
+            <p>Created by Ger | <span class="far fa-copyright"></span> 2021 All rights reserved.</span></p>
+            <ul class="footer__lista">
+                <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </footer>
+
+        <!-- Botón Scroll -->
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+    
+    </main>
+
+    <!-- Importación archivos Js -->
+    <script src="../js/scripts.js"></script>
+
+</body>
+</html>
